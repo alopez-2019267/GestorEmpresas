@@ -1,0 +1,429 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorEmpresas",
+    "dateExported": "2024-03-01T05:58:10.005Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-01T01:28:40.263Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Empresas",
+            "containerId": "",
+            "created": "2024-03-01T01:29:05.172Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7df06b22-9c26-4db6-8e19-f429eb089153",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T01:05:08.217Z",
+            "modified": "2024-03-01T01:10:52.038Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "admin123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "74abcc8e-b9ca-46ec-b158-30deb8c0bced",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "Test",
+            "url": "/user/test",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T01:11:14.723Z",
+            "modified": "2024-03-01T01:11:31.117Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjU1NDUxLCJleHAiOjE3MDkyNjYyNTF9.TMjfJuzSwUp3xgAvbf-fajRlcY7ArzMCySQ_RRBgfeU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "94257953-d660-4b17-aa2c-57b297aaf62c",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "Crear nuevo Admin",
+            "url": "/user/createAdmin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T01:11:44.753Z",
+            "modified": "2024-03-01T01:14:08.993Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjU1NDUxLCJleHAiOjE3MDkyNjYyNTF9.TMjfJuzSwUp3xgAvbf-fajRlcY7ArzMCySQ_RRBgfeU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pablo"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Alvarado"
+                    },
+                    {
+                        "name": "username",
+                        "value": "palvarado"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "palvarado@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "dada"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b5bf991-004a-4798-8886-f047662bfd3a",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "Update User",
+            "url": "/user/updateUser/65e12be0048fed30da6871ce",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T01:14:45.998Z",
+            "modified": "2024-03-01T01:16:25.584Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjU1NDUxLCJleHAiOjE3MDkyNjYyNTF9.TMjfJuzSwUp3xgAvbf-fajRlcY7ArzMCySQ_RRBgfeU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Antony"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Doren"
+                    },
+                    {
+                        "name": "username",
+                        "value": "adoren"
+                    },
+                    {
+                        "name": "email",
+                        "value": "adoren@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "Cliente",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4fa0267-9046-4b34-966f-1b8899946d0e",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "51438c2d-1520-4676-baa7-f751c47789dd",
+            "name": "Delete User",
+            "url": "/user/deleteUser/65e12be0048fed30da6871ce",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-01T01:16:44.667Z",
+            "modified": "2024-03-01T01:17:19.801Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjU1NDUxLCJleHAiOjE3MDkyNjYyNTF9.TMjfJuzSwUp3xgAvbf-fajRlcY7ArzMCySQ_RRBgfeU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d6604b2f-c19b-47a8-8558-6c9523d467f1",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Test",
+            "url": "/company/test",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T01:29:18.811Z",
+            "modified": "2024-03-01T01:30:39.482Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjU1NDUxLCJleHAiOjE3MDkyNjYyNTF9.TMjfJuzSwUp3xgAvbf-fajRlcY7ArzMCySQ_RRBgfeU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "95947c6a-66e9-4012-9350-638d9b454c91",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Registrar Empresa",
+            "url": "/company/registerCompany",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-01T01:30:59.739Z",
+            "modified": "2024-03-01T05:09:02.237Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Zapatos2000"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Produccion de zapatos"
+                    },
+                    {
+                        "name": "founder",
+                        "value": "Antony Doren"
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "Nacional"
+                    },
+                    {
+                        "name": "yearsOfExperience",
+                        "value": "15"
+                    },
+                    {
+                        "name": "businessCategory",
+                        "value": "Videojuegos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "06be31c1-88f6-4072-b52d-b309db9b9d0f",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Listar Compañias",
+            "url": "/company/listCompanys",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-01T04:45:24.053Z",
+            "modified": "2024-03-01T04:47:04.594Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf7eb0c3-0667-4042-8b1b-02235a926dce",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Buscar por años de trayectoria",
+            "url": "/company/searchCompanyYears",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-01T04:55:05.529Z",
+            "modified": "2024-03-01T05:09:43.314Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "15"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfe95b97-544f-4562-8479-eebc25e8bdb6",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Buscar por categoria",
+            "url": "/company/searchCompanyCategory",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-01T05:03:03.191Z",
+            "modified": "2024-03-01T05:09:57.396Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Alimentos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c27ee87a-e31d-4aca-bfb8-e85fb469e85d",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Listar Compañias en orden de A-Z",
+            "url": "/company/listCompanysAToZ",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-01T05:08:06.813Z",
+            "modified": "2024-03-01T05:08:25.306Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "67bda7e5-0c77-4dab-9275-3bd79706a867",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Listar compañias de Z-A",
+            "url": "/company/listCompanysZToA",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-01T05:11:57.078Z",
+            "modified": "2024-03-01T05:12:20.870Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68bd834f-911f-4770-b1aa-df6cebff4861",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Update de compañias",
+            "url": "/company/updateCompany/65e162eeb2c2d44ca5320345",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2024-03-01T05:18:53.027Z",
+            "modified": "2024-03-01T05:20:52.748Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Gucci"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "22e887c9-b128-4ba3-9f3a-2bcb39cb13ef",
+            "colId": "447f259b-9e1d-4fc2-a6bb-d3be0f73da4b",
+            "containerId": "45567b32-0f21-4dcc-88a5-53a0371e3a20",
+            "name": "Creación del excel",
+            "url": "/company/generateExcel",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-01T05:51:47.745Z",
+            "modified": "2024-03-01T05:53:30.407Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMmFkNDA0OGZlZDMwZGE2ODcxYzgiLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6ImFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5MjY4NDE2LCJleHAiOjE3MDkyNzkyMTZ9.qn8uHUxMp9JynigxUQt2QglbzXtiimMNoYKfctqfX0Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
